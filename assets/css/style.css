@@ -1,10 +1,40 @@
 body{
     margin: 0;
-    background-image: url("../images/back.jpg");
-    background-position: cover ;
-    background-repeat: no-repeat;
+    /* background-image: url("../images/background.jpg"); */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
 }
-p{
-    color:red;
+#container{
+    border: 1px solid black;
+    position: relative;
+    margin: 15vh auto;
+    height: 70vh;
+    width: 35vw;
+}
+#task-input{
+    position: relative;
+    height: 10vh;
+    width: 98.5%;
+    background:hsl(240, 25%, 10%);
+    font-size: 1.3rem;
+    color: white;
+    text-align: left;
+}
+::placeholder {
+  color: white;
+}
+#list-container{
+    border: 1px solid blue;
+    position: relative;
+    height: 53vh;
+    margin-top: 7vh;
+}
 
+
+
+
+
+
+.curve{
+    border-radius: 10px;
 }
