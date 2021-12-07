@@ -3,3 +3,5 @@ module.exports.home=function(req,res){
         title:"To-Do List",
     });
 }
+
+// app.use(express.static('assets'));
