@@ -23,11 +23,34 @@ body{
 ::placeholder {
   color: white;
 }
-#list-container{
+/* #list-container{
     border: 1px solid blue;
     position: relative;
     height: 53vh;
     margin-top: 7vh;
+} */
+ul{
+    /* border: 1px solid blue; */
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    height: 53vh;
+    margin-top: 7vh;
+    /* default padding in ul tag make sure to make it 0 */
+     padding: 0;
+    
+
+}
+ul li{
+    list-style-type: none;
+    height: 8vh;
+    width: 100%;
+    border-bottom: 1px solid white;
+    background:hsl(240, 25%, 10%);
+    font-size: 1.3rem;
+    color: white;
+    text-align: left;
+
 }
 
 

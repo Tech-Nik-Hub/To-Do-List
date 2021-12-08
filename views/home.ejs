@@ -11,10 +11,18 @@
         
         <input type="text" name="" id="task-input" placeholder="Create a task..." class="curve">
 
-        <div id="list-container" class="curve">
+        <!-- <div id="list-container" class="curve"> -->
+            <ul id="task-list">
+                <% for(let i of tasks){ %>
+                    <li id="task-content"  class="curve">
+                        <%= i.name %>
+                    </li>
+                <% } %>
+            </ul>
+
            
 
-        </div>
+        <!-- </div> -->
 
     </div>
     
