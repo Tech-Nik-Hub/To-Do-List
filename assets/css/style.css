@@ -11,24 +11,34 @@ body{
     height: 70vh;
     width: 35vw;
 }
-#task-input{
-    position: relative;
-    height: 10vh;
-    width: 98.5%;
-    background:hsl(240, 25%, 10%);
+form i{
+    position: absolute;
+    color: black;
+    top: 10px;
     font-size: 1.3rem;
-    color: white;
-    text-align: left;
+    
+}
+#task-input{
+    /* position: relative; */
+    height: 10vh;
+    width: 92.5%;
+    
+}
+input{
+    height: 100%;
+    width: 100%;
+    background:#2B3856;
+    font-size: 1.2rem;
+    font-family: "Lucida Handwriting", Times, serif;
+    color: #F7F7FF;
+    padding-left: 30px;
 }
 ::placeholder {
-  color: white;
+    color: #F7F7FF;
+    font-family:"Lucida Console", Times, serif;
+
+  
 }
-/* #list-container{
-    border: 1px solid blue;
-    position: relative;
-    height: 53vh;
-    margin-top: 7vh;
-} */
 ul{
     /* border: 1px solid blue; */
     display: flex;
@@ -43,14 +53,23 @@ ul{
 }
 ul li{
     list-style-type: none;
+    position: relative;
     height: 8vh;
     width: 100%;
     border-bottom: 1px solid white;
-    background:hsl(240, 25%, 10%);
-    font-size: 1.3rem;
-    color: white;
-    text-align: left;
+    background:#2B3856;
+    font-family: "Lucida Handwriting", Times, serif;
+    font-size: 1.1rem;
+    color: #F7F7FF;
+    /* text-align: left; */
+    /* padding-left:8px; */
+    /* margin-top: 2px; */
 
+}
+ul li p{
+    position: relative;
+    margin-top: 12px;
+    margin-left: 8px;
 }
 
 

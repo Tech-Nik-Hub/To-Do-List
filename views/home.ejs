@@ -8,21 +8,26 @@
 </head>
 <body>
     <div id="container">
-        
-        <input type="text" name="" id="task-input" placeholder="Create a task..." class="curve">
+            <form action="/create-task" method="post">
+                <div id="task-input">
+                    <i class="far fa-plus-square"></i>
+                    <input type="text" name="name" placeholder="Create a task..." class="curve">
+                
+                </div>
+            </form>
 
-        <!-- <div id="list-container" class="curve"> -->
+        
             <ul id="task-list">
                 <% for(let i of tasks){ %>
                     <li id="task-content"  class="curve">
-                        <%= i.name %>
+                        <p><%= i.name %></p>
                     </li>
                 <% } %>
             </ul>
 
            
 
-        <!-- </div> -->
+      
 
     </div>
     
