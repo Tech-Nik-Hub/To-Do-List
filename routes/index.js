@@ -10,6 +10,9 @@ router.get('/',controller.home);
 router.post('/create-task',controller.post);
 
 
+router.get('/delete-icon/',controller.delete);
+
+
 
 
 

@@ -10,9 +10,9 @@
     <div id="container">
             <form action="/create-task" method="post">
                 <div id="task-input">
-                    <i class="far fa-plus-square"></i>
+                    <button type="submit" id="btn"><i class="far fa-plus-square"></i></button>
                     <input type="text" name="name" placeholder="Create a task..." class="curve">
-                
+                    
                 </div>
             </form>
 
@@ -20,7 +20,10 @@
             <ul id="task-list">
                 <% for(let i of tasks){ %>
                     <li id="task-content"  class="curve">
-                        <p><%= i.name %></p>
+                        <div id="delete-icon">
+                             <a href="/delete-icon/?name=<%= i.name %>"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                        <div><p><%= i.name %></p></div>
                     </li>
                 <% } %>
             </ul>

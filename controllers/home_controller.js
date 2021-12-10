@@ -18,11 +18,25 @@ module.exports.home=function(req,res){
 }
 
 module.exports.post=function(req,res){
-    console.log(req.body);
+    // console.log(req.body);
+    tasksList.push({
+        name:req.body.name,
+    });
+    return res.redirect('/');
+}
+
+
+module.exports.delete=function(req,res){
+    let taskIndex=tasksList.find(task => task.name == req.query.name);
+
+
+    if(taskIndex!=-1){
+        tasksList.splice(taskIndex,1);
+        //splice deletes the item of taskIndex index.
+    }
+    
+    return res.redirect('back');
 }
 
 
 
-
-
-// app.use(express.static('assets'));
