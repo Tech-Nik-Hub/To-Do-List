@@ -1,9 +1,10 @@
 
 const express=require('express');
 const path = require("path");
+const db=require('./config/mongoose');
 const app=express();
 const port=3000;
-const db=require('./config/mongoose');
+
 
 // using body parser to conver data into keys and values from the browser(put above)
 app.use(express.urlencoded());

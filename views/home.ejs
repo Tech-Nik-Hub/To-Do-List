@@ -21,7 +21,7 @@
                 <% for(let i of tasks){ %>
                     <li id="task-content"  class="curve">
                         <div id="delete-icon">
-                             <a href="/delete-icon/?name=<%= i.name %>"><i class="fas fa-trash-alt"></i></a>
+                             <a href="/delete-icon/?id=<%= i._id%>"><i class="fas fa-trash-alt"></i></a>
                         </div>
                         <div><p><%= i.name %></p></div>
                     </li>
